@@ -20,8 +20,9 @@ if ( ! function_exists( 'wp_parse_args_recursive' ) ) {
 				if ( is_integer( $key ) && ! $preserve_integer_keys ) {
 					$output[] = $value;
 				} elseif (
-					( isset( $output[ $key ] ) && is_array( $output[ $key ] ) && is_array( $value ) ) ||
-					( isset( $output[ $key ] ) && is_object( $output[ $key ] ) && is_object( $value ) )
+					isset( $output[ $key ] ) &&
+					( is_array( $output[ $key ] ) || is_object( $output[ $key ] ) ) &&
+					( is_array( $value ) || is_object( $value ) )
 				) {
 					$output[ $key ] = wp_parse_args_recursive( $value, $output[ $key ], $preserve_integer_keys );
 				} else {
