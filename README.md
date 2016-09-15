@@ -1,4 +1,4 @@
-# wp_parse_arg_recursive
+# wp_parse_args_recursive
 
 Like wp_parse_args but supports recursivity.
 
