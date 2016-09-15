@@ -2,6 +2,13 @@
 	"name": "23r9i0/wp_parse_args_recursive",
 	"homepage": "https://github.com/23r9i0/wp_parse_args_recursive",
 	"license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Sergio P.A. (23r9i0)",
+            "email": "info@dsergio.com",
+            "role": "Developer"
+        }
+    ],
 	"autoload": {
 		"files": ["src/wp_parse_args_recursive.php"]
 	}
