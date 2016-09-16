@@ -5,6 +5,13 @@
  *
  * Inspired by NestedArray::mergeDeepArray ( Drupal )
  *
+ * @author Drupal
+ * @author Sergio P.A. (23r9i0) <info@dsergio.com>
+ *
+ * @license https://www.gnu.org/licenses/gpl-2.0.html GPL2 or later
+ *
+ * @version 1.0
+ *
  * @param  array|object  $args                   Values to merge with $defaults
  * @param  array|object  $defaults               Array or Object that serves as the defaults.
  * @param  boolean       $preserve_integer_keys  Optional. If given, integer keys will be preserved and merged instead of appended. Default false.
