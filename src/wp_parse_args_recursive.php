@@ -4,7 +4,7 @@
  * By default converts the returned type based on the $args and $defaults
  *
  *
- * @author Sergio P.A. (23r9i0) <info@dsergio.com>
+ * @author Sergio (kallookoo) <sergio@dsergio.com>
  * @license https://www.gnu.org/licenses/gpl-2.0.html GPL2 or later
  * @version 1.0
  *
