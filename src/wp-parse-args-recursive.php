@@ -3,19 +3,25 @@
  * Like wp_parse_args but supports recursivity
  * By default converts the returned type based on the $args and $defaults
  *
- *
  * @author Sergio (kallookoo) <sergio@dsergio.com>
  * @license https://www.gnu.org/licenses/gpl-2.0.html GPL2 or later
- * @version 1.1
+ * @version 1.2
  *
- * @param  array|object  $args                   Values to merge with $defaults
- * @param  array|object  $defaults               Array, Object that serves as the defaults or string.
- * @param  boolean       $preserve_type          Optional. Convert output array into object if $args or $defaults if it is. Default true
- * @param  boolean       $preserve_integer_keys  Optional. If given, integer keys will be preserved and merged instead of appended. Default false.
- *
- * @return array|object  $output                 Merged user defined values with defaults.
+ * @package dsergio\com\WordPress\Helpers
  */
+
 if ( ! function_exists( 'wp_parse_args_recursive' ) ) {
+	/**
+	 * Like wp_parse_args but supports recursivity
+	 * By default converts the returned type based on the $args and $defaults
+	 *
+	 * @param  array|object $args                   Values to merge with $defaults.
+	 * @param  array|object $defaults               Array, Object that serves as the defaults or string.
+	 * @param  boolean      $preserve_type          Optional. Convert output array into object if $args or $defaults if it is. Default true.
+	 * @param  boolean      $preserve_integer_keys  Optional. If given, integer keys will be preserved and merged instead of appended.
+	 *
+	 * @return array|object  $output                 Merged user defined values with defaults.
+	 */
 	function wp_parse_args_recursive( $args, $defaults, $preserve_type = true, $preserve_integer_keys = false ) {
 		$output = array();
 		foreach ( array( $defaults, $args ) as $list ) {
