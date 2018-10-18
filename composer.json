@@ -11,6 +11,6 @@
         }
     ],
 	"autoload": {
-		"files": ["src/wp_parse_args_recursive.php"]
+		"files": ["src/wp-parse-args-recursive.php"]
 	}
 }
